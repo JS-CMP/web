@@ -1,7 +1,7 @@
 'use client';
-import Graph from '../Graph';
+import Graph, {DataPoint} from '../Graph';
 
-const data = [
+const data: DataPoint[] = [
     { name: 'JSCMP', Value:  0.31},
     { name: 'Node JS', Value: 1 },
 ];
@@ -16,4 +16,4 @@ export default function HeroGraph() {
             </div>
         </div>
     );
-} 
+}
