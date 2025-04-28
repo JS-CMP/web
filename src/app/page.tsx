@@ -1,28 +1,21 @@
-'use client';
-
+import BottomPage from "@/components/BottomPage";
+import NewsLetter from "@/components/NewsLetter";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Main_Tuto from "../components/Main_Tuto";
-import CodeEditor from "../components/CodeEditor";
-import { useState } from "react";
-import BottomPage from "../components/BottomPage";
 
 export default function Home() {
-  const [code, setCode] = useState("// Commence à coder ici...");
   return (
     <div>
-    <Header/>
-    <Hero/>
-    <Main_Tuto/>
-    {/* <div className="p-10 text-white">
-      <h1 className="text-3xl font-bold mb-4">Éditeur de code</h1>
-      <CodeEditor
-        value={code}
-        onChange={(newCode) => setCode(newCode || "")}
-        language="javascript"
-      />
-    </div> */}
-    <BottomPage />
+        <Header/>
+        <div className="px-28">
+            <Hero/>
+            <div className={`mb-[80px] w-[60%] border-b border-b-[#4F4D4D] mx-[20%]`}></div>
+            <Main_Tuto/>
+            <div className={`my-[80px] w-[60%] border-b border-b-[#4F4D4D] mx-[20%]`}></div>
+            <NewsLetter/>
+            <BottomPage />
+        </div>
     </div>
   );
 }

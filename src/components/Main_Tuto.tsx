@@ -1,5 +1,4 @@
 import Terminal from './Terminal';
-import Image from 'next/image';
 
 const code = `// the hello world program
 console.log('Hello World!');`;
@@ -11,36 +10,50 @@ const code_Cpp = `#include "types/JsAny.hpp"
 int main() {console["log"](JS::Any("Hello World!"));}
 `;
 
-const code_result = `JS-CMP git:(main)$ ./js_cmp test.js && g++ test.js.cpp
-Hello World!`;
+const code_result = `./js_cmp test.js && g++ test.js.cpp
+> Hello World!`;
+
 
 export default function Main_Tuto() {
-    return (
-        <div className='p-10'>
-            <div className="px-20 mb-10 flex">
-                <h1 className="text-4xl font-bold">To Start</h1>
-            </div>
-            <div className='flex'>
-                <div>
-                    <Terminal content={code} size="md" />
-                </div>
-                <div className="flex items-center justify-center p-3">
-                    <div className="mr-2 [transform:rotate(210deg)_translateX(-10px)]">
-                        <Image src="/arrow.svg" alt="Arrow" width={70} height={70} />
+  return (
+    <div className="w-full">
+        <div className="mb-10 flex gap-4">
+            <h1 className="text-4xl font-bold">How does it work?</h1>
+        </div>
+
+        <div className="flex gap-20 w-full">
+            <div className='flex flex-col gap-10 w-full'>
+                <div className='flex w-full justify-between'>
+                    <div className='max-w-xl'>
+                        <span className="text-2xl font-bold text-[#F0C417] mb-2">01</span>
+                        <p className="text-lg mb-6">
+                            Write your JavaScript code as usual. No special syntax or restrictions!
+                        </p>
                     </div>
+                    <Terminal content={code} language="javascript" />
                 </div>
-                <div className="flex justify-end">
-                    <Terminal content={code_Cpp} size="sm" />
-                </div>
-                <div className="flex items-center justify-center p-3">
-                    <div className="mr-2 [transform:rotate(-30deg)_scaleX(-1)_translateX(-10px)]">
-                        <Image src="/arrow.svg" alt="Arrow" width={70} height={70} />
+
+                <div className='flex w-full justify-between'>
+                    <div className='max-w-xl'>
+                        <span className="text-2xl font-bold text-[#F0C417] mb-2">02</span>
+                        <p className="text-lg mb-6">
+                            Compile it using <code>js_cmp</code> into modern, fast C++ code.
+                        </p>
                     </div>
+                    <Terminal content={code_Cpp} language="cpp" />
                 </div>
-                <div className="">
-                    <Terminal content={code_result} size="sm" />
+
+                <div className='flex w-full justify-between'>
+                    <div className='max-w-xl'>
+                        <span className="text-2xl font-bold text-[#F0C417] mb-2">03</span>
+                        <p className="text-lg mb-6">
+                            Build and run your C++ program — it behaves exactly like your original JavaScript!
+                        </p>
+                    </div>
+                    <Terminal content={code_result} language="shell" />
                 </div>
             </div>
         </div>
-    )
+    </div>
+  );
 }
