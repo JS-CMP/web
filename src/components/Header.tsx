@@ -8,8 +8,12 @@ export default function Header() {
         <div className="text-xl font-custom text-white">JSCMP</div>
       </div>
       <div className="flex items-center justify-end w-1/2 p-5 gap-3">
-        <div>Docs</div>
-        <div>GitHub</div>
+        <a href="https://github.com/your-org/your-repo/docs" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition">
+          Docs
+        </a>
+        <a href="https://github.com/JS-CMP/JS-CMP" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition">
+          GitHub
+        </a>
       </div>
     </div>
   );

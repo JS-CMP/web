@@ -14,8 +14,8 @@ export default function Hero() {
                     The goal was to keep the speed of interpreted code like java script while benefiting from the speed of compiled languages ​​like c++. We created JS CMP which is an open source project and still under development
                 </span>
                 <div className="flex gap-7">
-                    <Hero_button text="Online transpiller" bgColor="bg-white" textColor="text-black" fontWieght="font-semibold"/>
-                    <Hero_button text="Download code" bgColor="bg-[#F0C417]" textColor="text-black" fontWieght="font-semibold" borderColor="border-b-1 border-b-[#FFFFFF]"/>
+                    <Hero_button text="Online transpiller" bgColor="bg-white" textColor="text-black" fontWieght="font-semibold" borderColor="border-b-1 border-b-[#FFFFFF]" href="/coming-soon"/>
+                    <Hero_button text="Download code" bgColor="bg-[#F0C417]" textColor="text-black" fontWieght="font-semibold" borderColor="border-b-1 border-b-[#FFFFFF]" href="https://github.com/JS-CMP/JS-CMP/tree/main"/>
                 </div>
             </div>
             <HeroGraph />
