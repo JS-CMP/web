@@ -1,17 +1,16 @@
 'use client';
-import { BarChart, ResponsiveContainer, Bar,  Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { BarChart, ResponsiveContainer, Bar, XAxis, YAxis, Tooltip } from 'recharts';
 
-interface DataPoint {
+export interface DataPoint {
   name: string;
-  value: number;
+  Value: number;
 }
 
 interface GraphProps {
   data: DataPoint[];
-  color: string;
 }
 
-const Graph: React.FC<GraphProps> = ({ data, color }) => {
+const Graph: React.FC<GraphProps> = ({ data }) => {
   return (
     <div className="w-full aspect-[4/3]">
       <ResponsiveContainer width="100%" height="100%">
@@ -34,7 +33,6 @@ const Graph: React.FC<GraphProps> = ({ data, color }) => {
           }}
         />
           <Tooltip />
-          <Legend />
           <Bar dataKey="Value" fill="#F0C417" barSize={100}/>
         </BarChart>
       </ResponsiveContainer>

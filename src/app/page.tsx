@@ -1,18 +1,21 @@
+import BottomPage from "@/components/BottomPage";
+import NewsLetter from "@/components/NewsLetter";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Main_Tuto from "../components/Main_Tuto";
-import BlogListPage from "@/app/blog/page";
-import BlogPage from "@/app/blog";
 
 export default function Home() {
   return (
     <div>
-    <Header/>
-      <div className="w-full">
-      <BlogPage/>
-      </div>
-    {/*<Hero/>*/}
-    {/*<Main_Tuto/>*/}
+        <Header/>
+        <div className="px-28">
+            <Hero/>
+            <div className={`mb-[80px] w-[60%] border-b border-b-[#4F4D4D] mx-[20%]`}></div>
+            <Main_Tuto/>
+            <div className={`my-[80px] w-[60%] border-b border-b-[#4F4D4D] mx-[20%]`}></div>
+            <NewsLetter/>
+            <BottomPage />
+        </div>
     </div>
   );
 }
