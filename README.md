@@ -47,7 +47,7 @@ To run this project locally, you need to have Node.js installed. You can downloa
    ```
 
 
-The app is accessible at `https://js-cmp.github.io/web/`.
+The app is accessible at https://js-cmp.github.io/web/.
 
 ## Contributing
 
