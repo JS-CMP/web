@@ -2,7 +2,7 @@
 
 For the development of **JSCMP**, a lightweight JavaScript interpreter in C++, I've been exploring ways to improve the handling of dynamic strings—an essential component for any modern language runtime. Traditional flat arrays of characters (i.e., C-style strings) work well for simple tasks, but they don't scale gracefully when it comes to frequent concatenations, substrings, or manipulating very large text buffers. 
 
-Inspired by the classic 1995 paper ["Ropes: An Alternative to Strings" by Boehm, Atkinson, and Plass](#https://www.cs.tufts.edu/comp/150FP/archive/hans-boehm/ropes.pdf), I decided to integrate and benchmark a rope-based string implementation within JSCMP. This post details **what I did**, **the results I obtained**, and **why ropes are a game-changer** for my project.
+Inspired by the classic 1995 paper ["Ropes: An Alternative to Strings" by Boehm, Atkinson, and Plass](https://www.cs.tufts.edu/comp/150FP/archive/hans-boehm/ropes.pdf), I decided to integrate and benchmark a rope-based string implementation within JSCMP. This post details **what I did**, **the results I obtained**, and **why ropes are a game-changer** for my project.
 
 ---
 

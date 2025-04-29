@@ -8,6 +8,7 @@ export default function RootLayout({
 }) {
   return (
       <html lang="en">
+        <title>JSCMP</title>
       <body>
       <Header/>
       <div className="px-28">
