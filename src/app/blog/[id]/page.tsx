@@ -3,6 +3,7 @@ import Hero_button from "@/components/Buttons/Hero_button";
 import { blogPosts } from "@/blog/blog";
 import MarkdownRenderer from "@/components/MarkdownRender/MardownRender";
 import { readFile } from "fs/promises";
+import BottomPage from "@/components/BottomPage";
 
 export async function generateStaticParams() {
     return blogPosts.map((post) => ({ id: post.id.toString() }));
@@ -37,6 +38,7 @@ export default async function BlogPage({ params }: any) {
                     <Hero_button href="/blog" text="Back to Blog List" bgColor="bg-[#F0C417]"   />
                 </div>
             </div>
+            <BottomPage/>
         </div>
     );
 }

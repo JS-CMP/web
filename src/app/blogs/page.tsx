@@ -1,5 +1,6 @@
 import React from "react";
 import {blogPosts} from "@/blog/blog";
+import BottomPage from "@/components/BottomPage";
 
 export default function BlogListPage() {
     return (
@@ -29,6 +30,7 @@ export default function BlogListPage() {
                     </div>
                 ))}
             </div>
+            <BottomPage/>
         </div>
     );
 }
