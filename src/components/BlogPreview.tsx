@@ -1,34 +1,5 @@
 import React from "react";
-
-export const blogPosts = [
-    {
-        id: 1,
-        title: "How to Learn React in 2025",
-        date: "April 28, 2025",
-        description:
-            "A modern guide to learning React efficiently, with tips and best practices for beginners and experienced developers.",
-        imageUrl: "https://i.imgur.com/OG4U9MM.jpeg",
-        markdown: "/blog-posts/beta-test-plan.md",
-    },
-    {
-        id: 2,
-        title: "Understanding JavaScript Closures",
-        date: "April 20, 2025",
-        description:
-            "Closures can be tricky! This article explains them in a simple, practical way with real-world examples.",
-        imageUrl: "https://i.imgur.com/42AnNaV.jpeg",
-        markdown: "/blog-posts/beta-test-plan.md",
-    },
-    {
-        id: 3,
-        title: "10 CSS Tricks You Need to Know",
-        date: "April 10, 2025",
-        description:
-            "Boost your front-end skills with these essential CSS techniques that every developer should master.",
-        imageUrl: "https://i.imgur.com/OtWeocI.jpeg",
-        markdown: "/blog-posts/beta-test-plan.md",
-    },
-];
+import { blogPosts } from "../blog/blog";
 
 export default function BlogPreview() {
     return (
@@ -49,10 +20,10 @@ export default function BlogPreview() {
                             <p className="text-gray-400 text-sm mt-1">{post.date}</p>
                             <p className="mt-4 text-gray-300">{post.description}</p>
                             <div className="flex">
-                                <button
+                                <a href={`/blog/${post.id}`}
                                     className={`px-4 py-2 border rounded-md bg-[#F0C417] text-black font-semibold`}>
                                     Read More
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>

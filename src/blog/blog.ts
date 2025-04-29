@@ -1,29 +1,20 @@
 export const blogPosts = [
     {
         id: 1,
-        title: "How to Learn React in 2025",
-        date: "April 28, 2025",
+        title: "Reducing Boilerplate in C++ with Macros",
+        date: "April 29, 2025",
         description:
-            "A modern guide to learning React efficiently, with tips and best practices for beginners and experienced developers.",
-        imageUrl: "https://i.imgur.com/OG4U9MM.jpeg",
-        markdown: "/blog-posts/beta-test-plan.md",
+            "How to uses macros to simplify operator overloading and eliminate boilerplate, define custom, expressive syntax with just a few lines of code.",
+        imageUrl: "/Macros.jpg",
+        markdown: "/blog-posts/Macro.md",
     },
     {
         id: 2,
-        title: "Understanding JavaScript Closures",
-        date: "April 20, 2025",
+        title: "Optimizing string concatenation in C++ with Rope data strucuture ",
+        date: "April 28, 2025",
         description:
-            "Closures can be tricky! This article explains them in a simple, practical way with real-world examples.",
-        imageUrl: "https://i.imgur.com/42AnNaV.jpeg",
-        markdown: "/blog-posts/beta-test-plan.md",
-    },
-    {
-        id: 3,
-        title: "10 CSS Tricks You Need to Know",
-        date: "April 10, 2025",
-        description:
-            "Boost your front-end skills with these essential CSS techniques that every developer should master.",
-        imageUrl: "https://i.imgur.com/OtWeocI.jpeg",
-        markdown: "/blog-posts/beta-test-plan.md",
+            "Boost the performance of std::string using an alternative data structure.",
+        imageUrl: "/Rope-data-structure.png",
+        markdown: "/blog-posts/Rope-data-structure.md",
     },
 ];

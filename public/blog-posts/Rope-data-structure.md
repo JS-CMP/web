@@ -53,7 +53,7 @@ The benchmark covered input sizes from 100 to 100,000 characters.
 
 ## Results
 
-The results from `Basic Benchmark JSCMP.csv` were clear:
+The results from the [benchmark](https://docs.google.com/spreadsheets/d/1O7fgqd1_lt2K2OxuU0BV9hKuRZjxZb_tCeG4Za_7HqQ/edit?gid=0#gid=0) were clear:
 
 | Operation | Traditional String (ms) | Rope (ms) | Speedup |
 |:----------|:------------------------|:---------|:--------|
@@ -105,5 +105,3 @@ Stay tuned for more deep dives into building efficient JavaScript engines from s
 
 [Simon](#https://github.com/SimonBandiera)
 *April 28, 2025*
-
----

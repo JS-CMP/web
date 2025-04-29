@@ -3,6 +3,7 @@
 import React, {useEffect, useRef} from "react";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
+import remarkGfm from "remark-gfm";
 import rehypeKatex from "rehype-katex";
 import hljs from "highlight.js";
 import "highlight.js/styles/atom-one-dark.css"; // Import the style you prefer
@@ -17,7 +18,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({content}) => {
         <div className="prose max-w-none p-6 rounded-lg shadow-md">
             <ReactMarkdown
                 children={content}
-                remarkPlugins={[remarkMath]}
+                remarkPlugins={[remarkMath, remarkGfm]}
                 rehypePlugins={[rehypeKatex]}
                 components={{
                     code(props) {
