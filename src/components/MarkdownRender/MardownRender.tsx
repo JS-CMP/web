@@ -31,9 +31,8 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({content}) => {
                             }
                         }, []);
 
-                        console.log("props.children", props.children, props.children?.split("\n").length );
 
-                        if (!props.className && props.children?.split("\n").length < 2) {
+                        if (!props.className && (props.children as unknown as string)?.split("\n").length < 2) {
                             return (
                                 <code ref={codeRef} className={`language-${language}`} style={{display: "inline"}}>{props.children}</code>
                             );

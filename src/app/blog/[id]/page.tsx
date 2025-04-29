@@ -1,35 +1,22 @@
-"use client";
-
-import React, {useEffect} from "react";
+import React from "react";
 import Hero_button from "@/components/Buttons/Hero_button";
 import { blogPosts } from "@/blog/blog";
 import MarkdownRenderer from "@/components/MarkdownRender/MardownRender";
+import { readFile } from "fs/promises";
 
-//{ id }: { id: string }
-export default function BlogPage() {
-    const id = "1"; // Replace with dynamic ID from URL or props
-    const [post, setPost] = React.useState(blogPosts.find((post) => post.id === parseInt(id)));
-    const [content, setContent] = React.useState("");
+export async function generateStaticParams() {
+    return blogPosts.map((post) => ({ id: post.id.toString() }));
+}
+
+
+export default async function BlogPage({ params }: any) {
+    const post = blogPosts.find((p) => p.id.toString() === params.id);
 
     if (!post) {
-        return (
-            <div className="bg-[#19191f] text-gray-200 flex items-center justify-center">
-                <h1 className="text-3xl">Blog post not found.</h1>
-            </div>
-        );
+        return <div className="text-white">Post not found</div>;
     }
 
-    useEffect(() => {
-        fetch(post.markdown).then((res) => {
-            if (res.ok) {
-                res.text().then((text) => {
-                    setContent(text);
-                });
-            } else {
-                setPost(undefined);
-            }
-        })
-    }, []);
+    const content = await readFile("public" + post.markdown, "utf-8");
 
     return (
         <div className="bg-[#19191f] text-gray-200 p-6">
@@ -47,7 +34,7 @@ export default function BlogPage() {
                 </div>
 
                 <div className="mt-10">
-                    <Hero_button href="/blog" text="Back to Blog List" />
+                    <Hero_button href="/blog" text="Back to Blog List" bgColor="bg-[#F0C417]"   />
                 </div>
             </div>
         </div>
