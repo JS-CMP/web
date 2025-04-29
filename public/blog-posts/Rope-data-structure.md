@@ -1,4 +1,3 @@
-# Optimizing string concatenation in C++ with Rope data strucuture 
 
 For the development of **JSCMP**, a lightweight JavaScript interpreter in C++, I've been exploring ways to improve the handling of dynamic strings—an essential component for any modern language runtime. Traditional flat arrays of characters (i.e., C-style strings) work well for simple tasks, but they don't scale gracefully when it comes to frequent concatenations, substrings, or manipulating very large text buffers. 
 
