@@ -1,6 +1,4 @@
 
-# Reducing Boilerplate in C++ with Macros
-
 Modern C++ is powerful, but verbose. Operator overloading, in particular, often involves a lot of boilerplate code—wrapping types, defining friend functions, managing access modifiers, and more.
 
 **SyntaxSmith** is a lightweight C++ header-only library that dramatically reduces that overhead by using macros to automate common patterns like operator overloading and function wrapping. Whether you're building DSLs or just want cleaner syntax, SyntaxSmith gives you the flexibility to define **custom operators and syntax extensions** with minimal code.

@@ -5,7 +5,7 @@ export const blogPosts = [
         date: "April 29, 2025",
         description:
             "How to uses macros to simplify operator overloading and eliminate boilerplate, define custom, expressive syntax with just a few lines of code.",
-        imageUrl: "/Macros.jpg",
+        imageUrl: "/web/Macros.jpg",
         markdown: "/blog-posts/Macro.md",
     },
     {
@@ -14,7 +14,7 @@ export const blogPosts = [
         date: "April 28, 2025",
         description:
             "Boost the performance of std::string using an alternative data structure.",
-        imageUrl: "/Rope-data-structure.png",
+        imageUrl: "/web/Rope-data-structure.png",
         markdown: "/blog-posts/Rope-data-structure.md",
     },
 ];

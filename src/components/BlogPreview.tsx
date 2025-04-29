@@ -20,7 +20,7 @@ export default function BlogPreview() {
                             <p className="text-gray-400 text-sm mt-1">{post.date}</p>
                             <p className="mt-4 text-gray-300">{post.description}</p>
                             <div className="flex">
-                                <a href={`/blog/${post.id}`}
+                                <a href={`/web/blog/${post.id}`}
                                     className={`px-4 py-2 border rounded-md bg-[#F0C417] text-black font-semibold`}>
                                     Read More
                                 </a>
