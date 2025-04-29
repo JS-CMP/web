@@ -62,14 +62,14 @@ li {
 }
 
 /* Anchor link styles */
-a {
+a:not(.classic) {
     color: #3182ce; /* Updated color for links */
     text-decoration: none; /* Removes line-through */
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
-a:hover {
+a:not(.classic):hover {
     color: #2b6cb0; /* Changes color when hovered */
     text-decoration: underline; /* Adds underline on hover */
 }

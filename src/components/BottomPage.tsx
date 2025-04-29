@@ -5,15 +5,15 @@ export default function BottomPage() {
         <p className="text-sm mb-2">Based in Lille, France</p>
         <div className="flex justify-center items-center gap-1 text-sm">
           <span>Created by</span>
-          <a href="https://github.com/HForGames" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition underline">
+          <a href="https://github.com/HForGames" target="_blank" rel="noopener noreferrer" className="classic hover:text-yellow-400 transition underline">
             Hugo GALAN
           </a>
           <span>,</span>
-          <a href="https://github.com/SimonBandiera" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition underline">
+          <a href="https://github.com/SimonBandiera" target="_blank" rel="noopener noreferrer" className="classic hover:text-yellow-400 transition underline">
             Simon BANDIERA
           </a>
           <span>and</span>
-          <a href="https://github.com/victornu" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition underline">
+          <a href="https://github.com/victornu" target="_blank" rel="noopener noreferrer" className="classic hover:text-yellow-400 transition underline">
             Victor BRAUN
           </a>
         </div>

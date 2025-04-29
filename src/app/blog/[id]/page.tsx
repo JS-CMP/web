@@ -35,7 +35,7 @@ export default async function BlogPage({ params }: any) {
                 </div>
 
                 <div className="mt-10">
-                    <Hero_button href="/blog" text="Back to Blog List" bgColor="bg-[#F0C417]"   />
+                    <Hero_button href="/web/blogs" text="Back to Blog List" bgColor="bg-[#F0C417]" textColor="text-black"  />
                 </div>
             </div>
             <BottomPage/>

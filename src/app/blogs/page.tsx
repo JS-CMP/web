@@ -22,7 +22,7 @@ export default function BlogListPage() {
                             <p className="text-gray-400 text-sm mt-1">{post.date}</p>
                             <p className="mt-4 text-gray-300">{post.description}</p>
                             <div className="flex">
-                                <a className={`hover:underline px-4 py-2 border rounded-md bg-[#F0C417] text-black font-semibold`} href={`/blog/${post.id}`}>
+                                <a className={`hover:underline px-4 py-2 border rounded-md bg-[#F0C417] text-black font-semibold`} href={`/web/blog/${post.id}`}>
                                     Read More
                                 </a>
                             </div>
