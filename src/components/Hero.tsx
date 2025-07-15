@@ -17,7 +17,7 @@ export default function Hero() {
                 </div>
                 <div className="flex gap-7">
                     <Hero_button text="Online transpiller" bgColor="bg-white" textColor="text-black" fontWieght="font-semibold" href="/web/coming-soon"/>
-                    <Hero_button text="Download code" bgColor="bg-[#F0C417]" textColor="text-black" fontWieght="font-semibold" borderColor="border-b-1 border-b-[#FFFFFF]" href="https://github.com/JS-CMP/web/archive/refs/heads/main.zip"/>
+                    <Hero_button text="Download code" bgColor="bg-[#F0C417]" textColor="text-black" fontWieght="font-semibold" borderColor="border-b-1 border-b-[#FFFFFF]" href="hhttps://libropen.com/en/projects/js-cmp"/>
                 </div>
             </div>
             <HeroGraph />
