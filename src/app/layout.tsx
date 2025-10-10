@@ -7,7 +7,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <>
+        <html lang="en">
         <head>
             <title>JSCMP</title>
             <title>JS-CMP – JavaScript to C++ Transpiler</title>
@@ -37,10 +37,10 @@ export default function RootLayout({
         </head>
             <body>
             <Header/>
-            <div className="px-28">
+            <div className="px-6 sm:px-12 md:px-16 lg:px-24 xl:px-28">
                 {children}
             </div>
             </body>
-        </>
+        </html>
     )
 }

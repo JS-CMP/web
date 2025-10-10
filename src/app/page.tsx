@@ -8,9 +8,9 @@ export default function Home() {
     return (
         <div>
             <Hero/>
-            <div className={`mb-[80px] w-[60%] border-b border-b-[#4F4D4D] mx-[20%]`}></div>
+            <div className={`mb-12 md:mb-16 lg:mb-[80px] w-[80%] md:w-[70%] lg:w-[60%] border-b border-b-[#4F4D4D] mx-auto`}></div>
             <Main_Tuto/>
-            <div className={`my-[80px] w-[60%] border-b border-b-[#4F4D4D] mx-[20%]`}></div>
+            <div className={`my-12 md:my-16 lg:my-[80px] w-[80%] md:w-[70%] lg:w-[60%] border-b border-b-[#4F4D4D] mx-auto`}></div>
             <NewsLetter/>
             <BottomPage/>
         </div>
