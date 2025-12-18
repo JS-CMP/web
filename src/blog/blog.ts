@@ -17,4 +17,13 @@ export const blogPosts = [
         imageUrl: "/web/Rope-data-structure.png",
         markdown: "/blog-posts/Rope-data-structure.md",
     },
+    {
+        id: 3,
+        title: "Deep Dive: The AST Builder in JS_CMP_LEXER",
+        date: "December 18, 2025",
+        description:
+            "A deep dive into the construction of the Abstract Syntax Tree (AST) in the JS_CMP_LEXER project, exploring its design and implementation.",
+        imageUrl: "/web/AST.webp",
+        markdown: "/blog-posts/AST.md",
+    }
 ];
