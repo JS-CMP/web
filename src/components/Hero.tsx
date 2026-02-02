@@ -17,7 +17,7 @@ export default function Hero() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 lg:gap-7">
                     <Hero_button text="Online transpiller" bgColor="bg-white" textColor="text-black" fontWieght="font-semibold" href="/web/coming-soon"/>
-                    <Hero_button text="Download code" bgColor="bg-[#F0C417]" textColor="text-black" fontWieght="font-semibold" borderColor="border-b-1 border-b-[#FFFFFF]" href="https://github.com/JS-CMP/JS-CMP/releases/"/>
+                    <Hero_button text="Download" bgColor="bg-[#F0C417]" textColor="text-black" fontWieght="font-semibold" borderColor="border-b-1 border-b-[#FFFFFF]" href="https://github.com/JS-CMP/JS-CMP/releases/"/>
                 </div>
             </div>
             <HeroGraph />
